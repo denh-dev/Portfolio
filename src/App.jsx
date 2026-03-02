@@ -27,14 +27,14 @@ function App() {
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-200 min-h-screen flex flex-col relative">
       {/* Animated Liquid Background Blobs (Vibrant Red Theme) */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-red-400/60 dark:bg-red-500/70 rounded-full blur-[100px] animate-[pulse_8s_ease-in-out_infinite]"></div>
+        <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-red-400/30 dark:bg-red-500/40 rounded-full blur-[100px] animate-[pulse_8s_ease-in-out_infinite]"></div>
         <div className="absolute top-[40%] right-[-10%] w-[40%] h-[60%] bg-rose-400/50 dark:bg-rose-500/60 rounded-full blur-[120px] animate-[pulse_10s_ease-in-out_infinite]" style={{ animationDelay: '2s' }}></div>
         <div className="absolute bottom-[-20%] left-[20%] w-[60%] h-[60%] bg-pink-500/50 dark:bg-red-600/70 rounded-full blur-[120px] animate-[pulse_12s_ease-in-out_infinite]" style={{ animationDelay: '4s' }}></div>
       </div>
 
       {/* Floating Pill Navbar */}
       <header className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
-        <div className="bg-white/80 dark:bg-white/40 backdrop-blur-[30px] shadow-lg border border-white/20 dark:border-white/50 rounded-full px-3 sm:px-6 py-2 sm:py-3 flex items-center justify-between gap-2 sm:gap-8 w-full max-w-3xl transition-all duration-300">
+        <div className="bg-white/80 dark:bg-black/40 backdrop-blur-[30px] shadow-lg border border-white/20 dark:border-white/50 rounded-full px-3 sm:px-6 py-2 sm:py-3 flex items-center justify-between gap-2 sm:gap-8 w-full max-w-3xl transition-all duration-300">
 
           {/* Logo / Name */}
           <div className="flex items-center gap-2 shrink-0">
@@ -44,8 +44,8 @@ function App() {
 
           {/* Navigation Links */}
           <nav className="flex items-center gap-2 sm:gap-6">
-            <a className="text-xs sm:text-sm font-semibold text-slate-600 hover:text-primary dark:text-white/80 dark:hover:text-white transition-colors drop-shadow-sm" href="#chi-sono">Chi Sono</a>
-            <a className="text-xs sm:text-sm font-semibold text-slate-600 hover:text-primary dark:text-white/80 dark:hover:text-white transition-colors drop-shadow-sm" href="#cataloghi">Cataloghi</a>
+            <a className="text-xs sm:text-sm font-semibold text-slate-700 hover:text-primary dark:text-white dark:hover:text-white transition-colors drop-shadow-sm" href="#chi-sono">Chi Sono</a>
+            <a className="text-xs sm:text-sm font-semibold text-slate-700 hover:text-primary dark:text-white dark:hover:text-white transition-colors drop-shadow-sm" href="#cataloghi">Cataloghi</a>
           </nav>
 
           {/* CTA Button */}
@@ -64,7 +64,7 @@ function App() {
             {/* Profile Image */}
             <div className="relative shrink-0">
               <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden ring-4 ring-white dark:ring-white/80 shadow-2xl shadow-black/50">
-                <img alt="Dennis Ferraresi Profile" className="w-full h-full object-cover" src="/profile.jpg" />
+                <img alt="Dennis Ferraresi Profile" className="w-full h-full object-cover" src="/profile.webp" />
               </div>
               <div className="absolute bottom-1 right-1 md:bottom-3 md:right-3 bg-primary text-white p-1.5 rounded-full border-2 border-white dark:border-background-dark flex items-center justify-center shadow-lg">
                 <span className="material-symbols-outlined text-[18px] md:text-[24px]">verified</span>
@@ -100,7 +100,7 @@ function App() {
                 Agente di Commercio New Catering & Marr. Specializzato in forniture food per Bar e locali della ristorazione veloce. Pasticceria, snack, finger food e panificati: ti offro i prodotti giusti e l'affidabilità di un grande gruppo per elevare la tua proposta food in ogni momento della giornata.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/40 dark:bg-white/5 shadow-inner backdrop-blur-md">
+                <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/40 dark:bg-black/20 shadow-inner backdrop-blur-md">
                   <div className="bg-white/80 dark:bg-white/10 p-2 rounded-xl shadow-sm text-primary">
                     <span className="material-symbols-outlined">bakery_dining</span>
                   </div>
@@ -109,7 +109,7 @@ function App() {
                     <p className="text-sm text-slate-700 dark:text-slate-300">Un assortimento imbattibile di pasticceria, croissanterie e panificati per far partire a mille il tuo locale fin dalle prime ore del mattino.</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/40 dark:bg-white/5 shadow-inner backdrop-blur-md">
+                <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/40 dark:bg-black/20 shadow-inner backdrop-blur-md">
                   <div className="bg-white/80 dark:bg-white/10 p-2 rounded-xl shadow-sm text-primary">
                     <span className="material-symbols-outlined">tapas</span>
                   </div>
@@ -139,14 +139,14 @@ function App() {
               <div className="group glass-panel transition-all duration-300 min-w-[280px] w-[280px] sm:min-w-[350px] sm:w-[350px] shrink-0 snap-center">
                 <div className="aspect-[4/3] bg-slate-100 dark:bg-slate-700 relative overflow-hidden">
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 z-10"></div>
-                  <img alt="Catalogo Prodotti Pasticceria e Snack Cover" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Catalogo Prodotti Pasticceria e Snack Cover" src="/cat-1.png" />
+                  <img alt="Catalogo Prodotti Pasticceria e Snack Cover" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Catalogo Prodotti Pasticceria e Snack Cover" src="/cat-1.webp" />
                   <div className="absolute top-3 right-3 bg-red-900/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-white z-20 shadow-sm">
                     2026
                   </div>
                 </div>
                 <div className="p-5">
                   <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Catalogo Generale New Catering</h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">Pasticceria fragrante e snack salati sempre freschi per colazioni e spuntini perfetti.</p>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4 line-clamp-2">Pasticceria fragrante e snack salati sempre freschi per colazioni e spuntini perfetti.</p>
                   <a href="/catalogo-new-catering.pdf" download className="w-full flex items-center justify-center gap-2 px-4 py-2.5 glass-button text-slate-900 dark:text-white text-sm font-bold group-hover:bg-primary group-hover:text-white transition-all">
                     <span className="material-symbols-outlined text-[18px]">picture_as_pdf</span>
                     Scarica PDF
@@ -157,14 +157,14 @@ function App() {
               <div className="group glass-panel transition-all duration-300 min-w-[280px] w-[280px] sm:min-w-[350px] sm:w-[350px] shrink-0 snap-center">
                 <div className="aspect-[4/3] bg-slate-100 dark:bg-slate-700 relative overflow-hidden">
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 z-10"></div>
-                  <img alt="Pub and Birrerie catalog cover" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pub and Birrerie catalog cover" src="/cat-2.png" />
+                  <img alt="Pub and Birrerie catalog cover" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pub and Birrerie catalog cover" src="/cat-2.webp" />
                   <div className="absolute top-3 right-3 bg-red-900/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-white z-20 shadow-sm">
                     2026
                   </div>
                 </div>
                 <div className="p-5">
                   <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Pub & Birrerie</h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">Hamburger, fritti e appetizer sfiziosi per esaltare i tuoi aperitivi e cene informali.</p>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4 line-clamp-2">Hamburger, fritti e appetizer sfiziosi per esaltare i tuoi aperitivi e cene informali.</p>
                   <a href="/pub-birrerie.pdf" download className="w-full flex items-center justify-center gap-2 px-4 py-2.5 glass-button text-slate-900 dark:text-white text-sm font-bold group-hover:bg-primary group-hover:text-white transition-all">
                     <span className="material-symbols-outlined text-[18px]">picture_as_pdf</span>
                     Scarica PDF
@@ -175,14 +175,14 @@ function App() {
               <div className="group glass-panel transition-all duration-300 min-w-[280px] w-[280px] sm:min-w-[350px] sm:w-[350px] shrink-0 snap-center">
                 <div className="aspect-[4/3] bg-white relative overflow-hidden flex items-center justify-center p-6">
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-300 z-10"></div>
-                  <img alt="Gelati catalog cover" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Gelati catalog cover" src="/cat-3-froneri.png" />
+                  <img alt="Gelati catalog cover" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Gelati catalog cover" src="/cat-3-froneri.webp" />
                   <div className="absolute top-3 right-3 bg-red-900/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-white z-20 shadow-sm">
                     2026
                   </div>
                 </div>
                 <div className="p-5">
                   <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Gelati</h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">Il gusto inconfondibile dei gelati <strong>Motta</strong> per il tuo locale.</p>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-4 line-clamp-2">Il gusto inconfondibile dei gelati <strong>Motta</strong> per il tuo locale.</p>
                   <a href="/Motta.pdf" download className="w-full flex items-center justify-center gap-2 px-4 py-2.5 glass-button text-slate-900 dark:text-white text-sm font-bold group-hover:bg-primary group-hover:text-white transition-all">
                     <span className="material-symbols-outlined text-[18px]">picture_as_pdf</span>
                     Scarica PDF
@@ -207,20 +207,20 @@ function App() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-lg mx-auto md:max-w-none">
                   {/* Phone */}
-                  <a className="flex flex-col items-center justify-center p-6 bg-slate-900/5 dark:bg-white/5 hover:bg-slate-900/10 dark:hover:bg-white/10 border border-slate-900/10 dark:border-white/10 rounded-xl transition-all group" href="tel:+393791718242">
+                  <a className="flex flex-col items-center justify-center p-6 bg-slate-900/10 dark:bg-black/20 hover:bg-slate-900/10 dark:hover:bg-white/10 border border-slate-900/10 dark:border-white/10 rounded-xl transition-all group" href="tel:+393791718242">
                     <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                       <span className="material-symbols-outlined text-white">call</span>
                     </div>
                     <h3 className="text-slate-900 dark:text-white font-bold mb-1">Telefono</h3>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm text-center">+39 379 171 8242</p>
+                    <p className="text-slate-700 dark:text-slate-300 text-sm text-center">+39 379 171 8242</p>
                   </a>
                   {/* Email */}
-                  <a className="flex flex-col items-center justify-center p-6 bg-slate-900/5 dark:bg-white/5 hover:bg-slate-900/10 dark:hover:bg-white/10 border border-slate-900/10 dark:border-white/10 rounded-xl transition-all group" href="mailto:ferraresi.dennis@icloud.com">
+                  <a className="flex flex-col items-center justify-center p-6 bg-slate-900/10 dark:bg-black/20 hover:bg-slate-900/10 dark:hover:bg-white/10 border border-slate-900/10 dark:border-white/10 rounded-xl transition-all group" href="mailto:ferraresi.dennis@icloud.com">
                     <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                       <span className="material-symbols-outlined text-white">mail</span>
                     </div>
                     <h3 className="text-slate-900 dark:text-white font-bold mb-1">Email</h3>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm text-center">ferraresi.dennis@icloud.com</p>
+                    <p className="text-slate-700 dark:text-slate-300 text-sm text-center">ferraresi.dennis@icloud.com</p>
                   </a>
                 </div>
               </div>
@@ -232,7 +232,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 py-8 mt-12">
         <div className="max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
-          <p className="text-slate-500 dark:text-slate-400 text-sm text-center">
+          <p className="text-slate-700 dark:text-slate-300 text-sm text-center">
             © 2026 Dennis Ferraresi - New Catering & Marr
           </p>
         </div>
@@ -240,17 +240,17 @@ function App() {
 
       {/* Download vCard Modal */}
       {showModal && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/50 backdrop-blur-sm p-4">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/100 backdrop-blur-sm p-4">
           <div className="relative w-[95%] sm:w-full max-w-lg glass-panel bg-white/95 dark:bg-black/80 shadow-2xl">
             <div className="flex items-center justify-between border-b border-slate-900/10 dark:border-white/10 px-4 sm:px-6 py-3 sm:py-4">
               <div className="flex items-center gap-3">
                 <div className="flex items-center justify-center size-8 rounded-full bg-primary/20 text-red-600 dark:text-red-400 overflow-hidden">
-                  <img src="/profile.jpg" alt="Dennis Ferraresi" className="w-full h-full object-cover" />
+                  <img src="/profile.webp" alt="Dennis Ferraresi" className="w-full h-full object-cover" />
                 </div>
                 <h2 className="text-lg font-bold text-slate-900 dark:text-white">Dennis Ferraresi</h2>
               </div>
               <button
-                className="group flex size-8 cursor-pointer items-center justify-center rounded-full bg-slate-100 dark:bg-white/5 text-slate-500 transition-colors hover:bg-slate-200 dark:hover:bg-white/10 dark:text-slate-400"
+                className="group flex size-8 cursor-pointer items-center justify-center rounded-full bg-slate-100 dark:bg-black/20 text-slate-700 transition-colors hover:bg-slate-200 dark:hover:bg-white/10 dark:text-slate-300"
                 onClick={() => setShowModal(false)}
               >
                 <span className="material-symbols-outlined text-xl">close</span>
@@ -260,7 +260,7 @@ function App() {
             <div className="flex flex-col items-center px-4 sm:px-8 py-6 sm:py-10 text-center">
               {/* Icon Visual */}
               <div className="mb-4 sm:mb-6 flex size-20 sm:size-24 items-center justify-center rounded-full bg-primary/20 text-red-600 dark:text-red-400 ring-8 ring-primary/10 overflow-hidden">
-                <img src="/profile.jpg" alt="Dennis Ferraresi Profile" className="w-full h-full object-cover" />
+                <img src="/profile.webp" alt="Dennis Ferraresi Profile" className="w-full h-full object-cover" />
               </div>
               <h3 className="mb-2 sm:mb-3 text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">Scarica il vCard</h3>
               <p className="mb-8 max-w-xs text-base text-slate-700 dark:text-slate-300">
@@ -276,7 +276,7 @@ function App() {
                   <span>Aggiungi Contatto</span>
                 </button>
                 <button
-                  className="flex w-full cursor-pointer items-center justify-center gap-2 py-3 px-6 text-sm font-bold text-slate-800 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white transition-colors glass-button bg-slate-900/5 dark:bg-black/20 border border-slate-900/10 dark:border-white/10"
+                  className="flex w-full cursor-pointer items-center justify-center gap-2 py-3 px-6 text-sm font-bold text-slate-800 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white transition-colors glass-button bg-slate-900/10 dark:bg-black/20 border border-slate-900/10 dark:border-white/10"
                   onClick={() => setShowModal(false)}
                 >
                   <span>Annulla</span>
@@ -284,7 +284,7 @@ function App() {
               </div>
             </div>
             {/* Contact Info Preview preview added straight to footer*/}
-            <div className="bg-slate-900/5 dark:bg-black/20 border-t border-slate-900/10 dark:border-white/10 px-4 sm:px-6 py-3 sm:py-4 backdrop-blur-md">
+            <div className="bg-slate-900/10 dark:bg-black/20 border-t border-slate-900/10 dark:border-white/10 px-4 sm:px-6 py-3 sm:py-4 backdrop-blur-md">
               <div className="flex flex-col gap-2 text-sm text-slate-800 dark:text-slate-300">
                 <div className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-[18px]">call</span>
