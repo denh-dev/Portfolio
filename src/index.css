@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply text-slate-900 dark:text-slate-100 font-display transition-colors duration-200;
+    background-color: theme('colors.background-light');
+    background-image:
+      radial-gradient(at 0% 0%, hsla(353, 100%, 76%, 0.4) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(28, 100%, 74%, 0.4) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, hsla(289, 100%, 76%, 0.4) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(210, 100%, 76%, 0.4) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  .dark body {
+    background-color: theme('colors.background-dark');
+    background-image:
+      radial-gradient(at 0% 0%, hsla(350, 100%, 45%, 0.8) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(0, 100%, 35%, 0.9) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, hsla(355, 100%, 40%, 0.8) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(348, 100%, 38%, 0.9) 0px, transparent 50%);
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/60 dark:bg-black/30 backdrop-blur-[50px] shadow-glass-light dark:shadow-glass-dark rounded-3xl overflow-hidden border border-white/60 dark:border-white/30;
+  }
+
+  .glass-button {
+    @apply bg-white/70 dark:bg-black/40 backdrop-blur-2xl shadow-glass-button-light dark:shadow-glass-button-dark rounded-full border border-white/50 dark:border-white/30;
+  }
+
+  .glass-text {
+    @apply text-slate-900 dark:text-white drop-shadow-md;
+  }
+}

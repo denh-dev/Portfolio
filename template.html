@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Minimalist Corporate Landing Page</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0A2540", // Deep Navy as requested
+                        "primary-light": "#1d3d5e",
+                        "background-light": "#ffffff",
+                        "background-alt": "#f6f9fc",
+                        "text-main": "#0A2540",
+                        "text-secondary": "#425466",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light text-text-main font-sans antialiased overflow-x-hidden selection:bg-primary/10 selection:text-primary">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Header -->
+<header class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md">
+<div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
+<div class="flex items-center gap-2 font-bold text-xl tracking-tight text-primary">
+<span class="material-symbols-outlined text-3xl">token</span>
+<span>Acme Corp</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-text-secondary hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="text-sm font-medium text-text-secondary hover:text-primary transition-colors" href="#">Company</a>
+<a class="text-sm font-medium text-text-secondary hover:text-primary transition-colors" href="#">Resources</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="hidden md:block text-sm font-medium text-text-secondary hover:text-primary transition-colors" href="#">Log in</a>
+<button class="bg-primary hover:bg-primary-light text-white text-sm font-semibold h-10 px-5 rounded-full transition-all shadow-sm hover:shadow-md">
+                        Get Started
+                    </button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative pt-20 pb-32 overflow-hidden">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+<div class="max-w-2xl">
+<div class="inline-flex items-center rounded-full border border-primary/10 bg-primary/5 px-3 py-1 text-xs font-medium text-primary mb-6">
+<span class="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
+                                New Enterprise Features
+                            </div>
+<h1 class="text-5xl font-black tracking-tight text-primary sm:text-6xl mb-6 leading-[1.1]">
+                                Elevating <br class="hidden sm:block"/>Business Standards.
+                            </h1>
+<p class="text-lg leading-8 text-text-secondary mb-8 max-w-lg">
+                                We provide innovative solutions that streamline your operations and drive growth. Discover the future of corporate efficiency with our minimalist approach.
+                            </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary hover:bg-primary-light text-white text-base font-semibold h-12 px-8 rounded-full transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                                    Explore Solutions
+                                    <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<button class="group bg-white border border-gray-200 hover:border-primary/30 text-text-secondary hover:text-primary text-base font-medium h-12 px-8 rounded-full transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-gray-400 group-hover:text-primary transition-colors">play_circle</span>
+                                    Watch Demo
+                                </button>
+</div>
+</div>
+<!-- Hero Image Placeholder -->
+<div class="relative w-full aspect-[4/3] rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-tr from-gray-50 to-gray-100 opacity-50"></div>
+<!-- Abstract pattern decoration -->
+<div class="absolute -right-12 -top-12 h-64 w-64 rounded-full bg-primary/5 blur-3xl"></div>
+<div class="absolute -left-12 -bottom-12 h-64 w-64 rounded-full bg-blue-100/20 blur-3xl"></div>
+<!-- Placeholder Icon -->
+<div class="relative flex flex-col items-center gap-4 text-gray-300 group-hover:text-primary/20 transition-colors duration-500">
+<span class="material-symbols-outlined text-8xl">grid_view</span>
+<span class="text-sm font-medium uppercase tracking-widest opacity-60">Dashboard Preview</span>
+</div>
+<!-- Data attribute for image description -->
+<div class="sr-only" data-alt="Minimalist abstract dashboard interface mockup with soft shadows"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-24 bg-white">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="mx-auto max-w-2xl text-center mb-16">
+<h2 class="text-base font-semibold leading-7 text-primary">Core Values</h2>
+<p class="mt-2 text-3xl font-bold tracking-tight text-text-main sm:text-4xl">Designed for clarity.</p>
+<p class="mt-4 text-lg leading-8 text-text-secondary">
+                            We strip away the unnecessary to focus on what truly drives your business forward.
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+<!-- Feature 1 -->
+<div class="group flex flex-col items-start p-8 rounded-2xl bg-white border border-gray-100 hover:border-gray-200 hover:shadow-lg transition-all duration-300">
+<div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-background-alt text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<h3 class="text-xl font-bold text-text-main mb-3">Strategic Insight</h3>
+<p class="text-text-secondary leading-relaxed">
+                                Data-driven strategies tailored to your unique market position, ensuring every move counts.
+                            </p>
+</div>
+<!-- Feature 2 -->
+<div class="group flex flex-col items-start p-8 rounded-2xl bg-white border border-gray-100 hover:border-gray-200 hover:shadow-lg transition-all duration-300">
+<div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-background-alt text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">public</span>
+</div>
+<h3 class="text-xl font-bold text-text-main mb-3">Global Reach</h3>
+<p class="text-text-secondary leading-relaxed">
+                                Connecting you with opportunities across international borders without the complexity.
+                            </p>
+</div>
+<!-- Feature 3 -->
+<div class="group flex flex-col items-start p-8 rounded-2xl bg-white border border-gray-100 hover:border-gray-200 hover:shadow-lg transition-all duration-300">
+<div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-background-alt text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<h3 class="text-xl font-bold text-text-main mb-3">Sustainable Growth</h3>
+<p class="text-text-secondary leading-relaxed">
+                                Building a future that respects both profit and the planet through efficient resource management.
+                            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Catalog CTA Section -->
+<section class="py-20 bg-background-alt border-y border-gray-100">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-12 rounded-3xl bg-white p-8 sm:p-12 shadow-sm ring-1 ring-gray-900/5">
+<div class="max-w-xl">
+<h2 class="text-3xl font-bold tracking-tight text-text-main sm:text-4xl mb-4">
+                                Download 2024 Catalog
+                            </h2>
+<p class="text-lg leading-8 text-text-secondary mb-6">
+                                Get detailed specifications and pricing for our full range of enterprise solutions in one concise document.
+                            </p>
+<div class="flex items-center gap-4 text-sm text-text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-green-600 text-[18px]">check_circle</span>
+                                    PDF Format
+                                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-green-600 text-[18px]">check_circle</span>
+                                    Instant Access
+                                </span>
+</div>
+</div>
+<div class="flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-end">
+<button class="w-full sm:w-auto flex items-center justify-center gap-3 bg-primary hover:bg-primary-light text-white text-lg font-bold h-16 px-10 rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+<span class="material-symbols-outlined text-[28px]">download</span>
+                                Download PDF Catalog
+                            </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white border-t border-gray-100 pt-16 pb-8">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
+<div class="flex items-center gap-2 font-bold text-xl tracking-tight text-primary">
+<span class="material-symbols-outlined text-2xl">token</span>
+<span>Acme Corp</span>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4">
+<a class="text-sm text-text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-sm text-text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-sm text-text-secondary hover:text-primary transition-colors" href="#">Contact Support</a>
+</div>
+</div>
+<div class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-sm text-gray-400">
+                        © 2024 Acme Corporation. All rights reserved.
+                    </p>
+<div class="flex gap-6">
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">LinkedIn</span>
+<!-- Replaced custom SVG with Material Symbol equivalent where possible or kept minimalist look -->
+<!-- Since social icons aren't standard in Material Symbols, using a placeholder logic or closest approximation for this specific design request while keeping it pure HTML/CSS without external SVG paths if strict, but let's stick to the prompt's request to use Material Symbols where data-icon was used. -->
+<!-- Actually, for social media specifically, standard icons are better. I will use text-based symbols or simple SVGs if strictly needed, but the prompt asked to replace icons with material symbols. Material symbols doesn't have brand icons. I will use generic 'share' or 'link' icons to represent social for this strict constraint, OR keep the original SVGs if they are crucial for brand identity. The prompt says "Replace all the icons in the code that have data-icon attribute". The original code had social icons. I will use generic network icons from Material Symbols to adhere strictly to the constraint while maintaining the design. -->
+<span class="material-symbols-outlined">work</span>
+</a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">Twitter</span>
+<span class="material-symbols-outlined">chat_bubble</span>
+</a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">Instagram</span>
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
