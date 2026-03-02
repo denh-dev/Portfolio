@@ -30,7 +30,7 @@
 
 @layer utilities {
   .glass-panel {
-    @apply bg-white/60 dark:bg-black/30 backdrop-blur-[50px] shadow-glass-light dark:shadow-glass-dark rounded-3xl overflow-hidden border border-white/60 dark:border-white/30;
+    @apply bg-white/60 dark:bg-black/30 backdrop-blur-[50px] shadow-glass-light dark:shadow-glass-dark rounded-3xl border border-white/60 dark:border-white/30;
   }
 
   .glass-button {

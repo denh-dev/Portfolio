@@ -137,7 +137,7 @@ function App() {
             <div className="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory hide-scrollbar">
               {/* Catalog Card 1 */}
               <div className="group glass-panel transition-all duration-300 min-w-[280px] w-[280px] sm:min-w-[350px] sm:w-[350px] shrink-0 snap-center">
-                <div className="aspect-[4/3] bg-slate-100 dark:bg-slate-700 relative overflow-hidden">
+                <div className="aspect-[4/3] bg-slate-100 dark:bg-slate-700 relative overflow-hidden rounded-t-3xl">
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 z-10"></div>
                   <img alt="Catalogo Prodotti Pasticceria e Snack Cover" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Catalogo Prodotti Pasticceria e Snack Cover" src="/cat-1.webp" />
                   <div className="absolute top-3 right-3 bg-red-900/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-white z-20 shadow-sm">
@@ -155,7 +155,7 @@ function App() {
               </div>
 
               <div className="group glass-panel transition-all duration-300 min-w-[280px] w-[280px] sm:min-w-[350px] sm:w-[350px] shrink-0 snap-center">
-                <div className="aspect-[4/3] bg-slate-100 dark:bg-slate-700 relative overflow-hidden">
+                <div className="aspect-[4/3] bg-slate-100 dark:bg-slate-700 relative overflow-hidden rounded-t-3xl">
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 z-10"></div>
                   <img alt="Pub and Birrerie catalog cover" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pub and Birrerie catalog cover" src="/cat-2.webp" />
                   <div className="absolute top-3 right-3 bg-red-900/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-white z-20 shadow-sm">
@@ -173,7 +173,7 @@ function App() {
               </div>
 
               <div className="group glass-panel transition-all duration-300 min-w-[280px] w-[280px] sm:min-w-[350px] sm:w-[350px] shrink-0 snap-center">
-                <div className="aspect-[4/3] bg-white relative overflow-hidden flex items-center justify-center p-6">
+                <div className="aspect-[4/3] bg-white relative overflow-hidden flex items-center justify-center p-6 rounded-t-3xl">
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-300 z-10"></div>
                   <img alt="Gelati catalog cover" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Gelati catalog cover" src="/cat-3-froneri.webp" />
                   <div className="absolute top-3 right-3 bg-red-900/80 backdrop-blur text-xs font-bold px-2 py-1 rounded text-white z-20 shadow-sm">
@@ -196,8 +196,10 @@ function App() {
           <section className="scroll-mt-24" id="contatti">
             <div className="glass-panel relative">
               {/* Decorative background pattern */}
-              <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
-              <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+              <div className="absolute inset-0 overflow-hidden rounded-3xl pointer-events-none z-0">
+                <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+              </div>
               <div className="relative z-10 p-6 sm:p-8 md:p-12">
                 <div className="text-center max-w-2xl mx-auto mb-8 md:mb-10">
                   <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-3 md:mb-4">Parliamo del tuo Business</h2>
@@ -284,7 +286,7 @@ function App() {
               </div>
             </div>
             {/* Contact Info Preview preview added straight to footer*/}
-            <div className="bg-slate-900/10 dark:bg-black/20 border-t border-slate-900/10 dark:border-white/10 px-4 sm:px-6 py-3 sm:py-4 backdrop-blur-md">
+            <div className="bg-slate-900/10 dark:bg-black/20 border-t border-slate-900/10 dark:border-white/10 px-4 sm:px-6 py-3 sm:py-4 backdrop-blur-md rounded-b-3xl">
               <div className="flex flex-col gap-2 text-sm text-slate-800 dark:text-slate-300">
                 <div className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-[18px]">call</span>
